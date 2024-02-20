@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test Toast(failed)">
+    <classes>
+      <class name="org.AutomationStore.GeneralTestMulti1">
+        <methods>
+          <include name="ConfigureAppium"/>
+          <include name="Close"/>
+          <include name="testBeliHalfEuy"/>
+        </methods>
+      </class> <!-- org.AutomationStore.GeneralTestMulti1 -->
+    </classes>
+  </test> <!-- Test Toast(failed) -->
+  <test thread-count="5" name="Test browser only(failed)">
+    <classes>
+      <class name="org.AutomationStore.browserTest">
+        <methods>
+          <include name="ConfigureAppium"/>
+          <include name="testBrowser"/>
+          <include name="Close"/>
+        </methods>
+      </class> <!-- org.AutomationStore.browserTest -->
+    </classes>
+  </test> <!-- Test browser only(failed) -->
+  <test thread-count="5" name="Test end2end Store(failed)">
+    <classes>
+      <class name="org.AutomationStore.GeneralTest">
+        <methods>
+          <include name="ConfigureAppium"/>
+          <include name="testBeli" invocation-numbers="0"/>
+          <include name="preSetup"/>
+          <include name="Close"/>
+        </methods>
+      </class> <!-- org.AutomationStore.GeneralTest -->
+    </classes>
+  </test> <!-- Test end2end Store(failed) -->
+</suite> <!-- Failed suite [Suite] -->
